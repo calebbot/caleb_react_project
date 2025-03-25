@@ -2,6 +2,9 @@ import axios from "axios";
 import { useState} from "react";
 import { Form, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Navbar from "./navbar";
+import Footer from "./footer";
+import Carousel from "./carousel";
 
 const  SingleProduct= () => {
     let [phone,setPhone]=useState("");
@@ -32,6 +35,8 @@ const  SingleProduct= () => {
 
     return (
         <div className="">
+            <Navbar/>
+            <Carousel/>
             <div className="row justify-content-center mt-3">
             
                 <div className="col-md-3 card shadow">
@@ -52,6 +57,7 @@ const  SingleProduct= () => {
             </form>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -2,6 +2,9 @@ import { getRoles } from "@testing-library/dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate,Link } from "react-router-dom";
+import Navbar from "./navbar";
+import Footer from "./footer";
+import Carousel from "./carousel";
 
 const GetProducts=()=>{
     let [products,setProducts]=useState([])//error
@@ -39,6 +42,8 @@ const GetProducts=()=>{
     },[])
     return(
         <div className="row">
+            <Navbar/>
+            <Carousel/>
             <b className="text-warning">{loading}</b>
             <b className="text-danger">{error}</b>
             {/* navbar */}
@@ -71,6 +76,7 @@ const GetProducts=()=>{
             ))}
             
             {/* footer */}
+            <Footer/>
         </div>
     );
 }
