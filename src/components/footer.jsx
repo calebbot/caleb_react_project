@@ -1,51 +1,37 @@
 const Footer = () => {
         return (
         
-          <div className="container-fluid">
-            <div className="row p-4 Footer">
-    
-              <div className="col-md-4 text-dark">
-                <h1>Body Beauty Products</h1>
-                <p>All trademarks displayed on this website are owned by Unilever Canada Inc. The unauthorized use of any trademark on this website is strictly prohibited
-    
-    Copyright © 2025 Unilever. All rights reserved. All copyright and other intellectual property rights in all text, images, sound, software and other materials on this site are owned by Unilever and its affiliated companies or are included with the permission of the relevant owner. References to affiliates or affiliated companies shall include all members of the Unilever Group.
-                </p>
-              </div>
-    
-              <div className="col-md-4 text-dark">
-              <h4 class="text-center">Stay in Touch</h4>
-    <p>Sign up and be the first to know about exciting offers, product updates and more from Dove and other Unilever brands. For further information, please refer to our Privacy Notice.</p>
-    
-                <h4 class="text-center">Contact Us</h4>
-                <form >
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    class="form-control"
-                  />
-                  <br />
-      
-                  <textarea
-                    name=""
-                    id=""
-                    class="form-control"
-                    placeholder="leave a comment"
-                    rows="3"
-                  ></textarea>
-                </form>
-                </div>
-               
-                <div className="col-md-4">
-                  <h2>Find us at:</h2>
-                  <div><iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=Haven%20court%202nd%20Floor%20Waiyaki%20Way,Opposite%20St%20Marks%20Church,%20Nairobi+(Body%20Beauty%20Products)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/drones/">gps drone</a></iframe></div>
-                </div>
-              
-    
-            </div>
-    
-            <footer class="text-white bg-dark text-center p-2">
-              <h5>Developed by Ann Momanyi &copy; 2025. All rights reserved</h5>
-            </footer>
+          <div className="container-fluid row bg-success">
+            <div class="col-md-4">
+               <h4 class="text-center">LOCATION</h4>
+               <p class="text-center">WE ARE LOCATED AT RUIRU-TOLL 300 METRES OFF THE THIKA SUPER HIGHWAY NEAR RUIRU SPORTS CLUB.</p>
+               <h4 class="text-center">OTHER SERVICES</h4>
+               <p class="text-center">WE PROVIDE TOWING SERVICES,DELIVERY OF VEHICLES ,MODIFICATION OF CARS,CAR MAKE UP</p>
+               <a href="https://facebook.com">
+                  <img src="images/fb.png"  width="100"/>
+               </a>
+               <a href="https://instagram.com">
+                  <img src="images/in.png" width="100"/>
+               </a>
+            </div>
+            <div class="col-md-4">
+                  <img src="images/ribon.jpg" width="300"/><br/><br/><br/>
+                  <h2 class="text-center">WE MAKE YOUR WISH COME TRUE</h2>
+            </div>
+            <div class="col-md-4 row"/>
+               <h4 class="text-center">CONTACT US</h4>
+               <form action=""/>
+                  <div><br/>
+                  <textarea name="" id="" class="form-control bg-success text-white" placeholder="leave a comment" rows="5"></textarea>
+                  <h2 class="text-center">QUALITY THINGS FOR QUALITY PEOPLE</h2>
+                  
+               </div>
+            
+          <marquee behavior="" direction="">DRIVE SAFE</marquee>
+         
+          <footer class="text-white bg-dark text-centre p-2">
+            <h5 class="text-center">Developed  by caleb.W &copy;2025.All rights reserved</h5>
+          </footer>
           </div>
         );
       };

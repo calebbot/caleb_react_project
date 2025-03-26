@@ -47,12 +47,7 @@ const GetProducts=()=>{
             <b className="text-warning">{loading}</b>
             <b className="text-danger">{error}</b>
             {/* navbar */}
-            <nav className="m-4">
-                <Link className="btn btn-dark mx-2"  to={"/addproducts"}>Add Products</Link>
-                <Link className="btn btn-dark mx-2" to={"/SignIn"}>Sign In</Link>
-                <Link className="btn btn-dark mx-2" to={"SignUp"}>Sign Up</Link>
-                <Link className="btn btn-dark mx-2"  to={"/"}>Home</Link>
-            </nav>
+            
             {/* carousel */}
             {/* content */}
             <div className="justify-content-center m-3 bg-success">
