@@ -9,6 +9,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import SingleProduct from './components/singleproduct';
 
 
+
+
 function App() {
   return (
     <Router>
@@ -22,7 +24,7 @@ function App() {
         <Route path="/SignIn" element={<SignIn/>}/>
         <Route path="/" element={<GetProducts/>}/>
         <Route path="/AddProducts" element={<AddProducts/>}/>
-        <Route path="/singleproduct" element={<SingleProduct/>}/>
+        <Route path="/singleproduct" element={<SingleProduct/>}/>  
       </Routes>
     </div>
     </Router>

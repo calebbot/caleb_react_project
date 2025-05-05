@@ -50,16 +50,16 @@ const GetProducts=()=>{
             
             {/* carousel */}
             {/* content */}
-            <div className="justify-content-center m-3 bg-success">
+            <div className="justify-content-center m-3 bg-light">
                 <div className="col-md-6">
                     <input type="text" placeholder="Search for product by name" className="form-control bg-success" onChange={(e)=>handleSearch(e.target.value)}/>
                 </div>
             </div>
             {filteredProducts.map((product)=>(
-               <div className="col-md-4 justify-content-center  bg-success">
+               <div className="col-md-4 justify-content-center  bg-light">
                <div className="card shadow">
                    <img src={img_url + product.product_photo} className="product_img bg-success" alt="" />
-                   <div className="card-body bg-success">
+                   <div className="card-body bg-light">
                        <h5 className="mt-2">{product.product_name}</h5>
                        <p className="text-muted">{product.product_desc.slice(0,10)}</p>
                        <b className="text-danger">{product.product_cost}ksh</b>
