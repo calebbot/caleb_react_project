@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <header className="App-header">
+      <header className="App-header bg-secondary">
         <h1>Caleb Motors</h1>
         <h2>Where Quality Meets Elegance</h2>
       </header>

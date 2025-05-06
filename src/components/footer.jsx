@@ -1,40 +1,59 @@
+import React from "react";
+
 const Footer = () => {
-        return (
-        
-          <div className="container-fluid row bg-success">
-            <div class="col-md-4">
-               <h4 class="text-center">LOCATION</h4>
-               <p class="text-center">WE ARE LOCATED AT RUIRU-TOLL 300 METRES OFF THE THIKA SUPER HIGHWAY NEAR RUIRU SPORTS CLUB.</p>
-               <h4 class="text-center">OTHER SERVICES</h4>
-               <p class="text-center">WE PROVIDE TOWING SERVICES,DELIVERY OF VEHICLES ,MODIFICATION OF CARS,CAR MAKE UP</p>
-               <a href="https://facebook.com">
-                  <img src="images/fb.png"  width="100"/>
-               </a>
-               <a href="https://instagram.com">
-                  <img src="images/in.png" width="100"/>
-               </a>
+    return (
+        <div className="container-fluid bg-secondary text-white">
+            <div className="row p-4">
+                {/* Location Section */}
+                <div className="col-md-4">
+                    <h4 className="text-center">LOCATION</h4>
+                    <p className="text-center">
+                        We are located at Toll, Juja, 300 meters off the Thika Super Highway near Ruiru Sports Club.
+                    </p>
+                    {/* Embedded Google Map */}
+                    <iframe
+                        title="Caleb Motors Location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.123456789!2d36.9581234!3d-1.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a123456789%3A0xabcdef123456789!2sToll%2C%20Juja!5e0!3m2!1sen!2ske!4v1681234567890!5m2!1sen!2ske"
+                        width="100%"
+                        height="200"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+
+                {/* Company Motto Section */}
+                <div className="col-md-4 text-center">
+                    <img src="images/ribon.jpg" alt="Caleb Motors" width="300" /><br /><br />
+                    <h2>WE MAKE YOUR WISH COME TRUE</h2>
+                </div>
+
+                {/* Contact Section */}
+                <div className="col-md-4">
+                    <h4 className="text-center">CONTACT US</h4>
+                    <form>
+                        <textarea
+                            className="form-control bg-secondary text-white"
+                            placeholder="Leave a comment"
+                            rows="5"
+                        ></textarea>
+                        <button className="btn btn-primary mt-3 w-100">Submit</button>
+                    </form>
+                    <h2 className="text-center mt-4">QUALITY THINGS FOR QUALITY PEOPLE</h2>
+                </div>
             </div>
-            <div class="col-md-4">
-                  <img src="images/ribon.jpg" width="300"/><br/><br/><br/>
-                  <h2 class="text-center">WE MAKE YOUR WISH COME TRUE</h2>
-            </div>
-            <div class="col-md-4 row"/>
-               <h4 class="text-center">CONTACT US</h4>
-               <form action=""/>
-                  <div><br/>
-                  <textarea name="" id="" class="form-control bg-success text-white" placeholder="leave a comment" rows="5"></textarea>
-                  <h2 class="text-center">QUALITY THINGS FOR QUALITY PEOPLE</h2>
-                  
-               </div>
-            
-          <marquee behavior="" direction="">DRIVE SAFE</marquee>
-         
-          <footer class="text-white bg-dark text-centre p-2">
-            <h5 class="text-center">Developed  by caleb.W &copy;2025.All rights reserved</h5>
-          </footer>
-          </div>
-        );
-      };
-      
-      export default Footer;
-    
+
+            {/* Marquee Section */}
+            <marquee behavior="scroll" direction="left" className="text-warning">
+                DRIVE SAFE
+            </marquee>
+
+            {/* Footer Section */}
+            <footer className="text-white bg-dark text-center p-2">
+                <h5>Developed by Caleb.M.Waweru &copy; 2025. All rights reserved.</h5>
+            </footer>
+        </div>
+    );
+};
+
+export default Footer;

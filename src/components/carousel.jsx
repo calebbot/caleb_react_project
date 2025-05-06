@@ -39,7 +39,9 @@ const Carousel = () => {
           </ol>
         </div>
       </div>
-    </section>
+    </section> 
+
+    
     );
   };
   
