@@ -13,6 +13,7 @@ const GetProducts = () => {
     let [filteredProducts, setFilteredProducts] = useState([]);
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light"); // Default to light mode
     const [cart, setCart] = useState([]); // State for cart
+    const [searchQuery, setSearchQuery] = useState(""); // State for search query
 
     const img_url = "https://calebmwaura.pythonanywhere.com/static/images/";
     const navigate = useNavigate();
@@ -32,6 +33,7 @@ const GetProducts = () => {
     };
 
     const handleSearch = (value) => {
+        setSearchQuery(value);
         const filtered = products && products.filter((product) =>
             product.product_name.toLowerCase().includes(value.toLowerCase())
         );
@@ -60,6 +62,30 @@ const GetProducts = () => {
         });
     };
 
+    const handleVoiceSearch = () => {
+        if (!("webkitSpeechRecognition" in window)) {
+            alert("Voice search is not supported in this browser. Please use Chrome.");
+            return;
+        }
+
+        const recognition = new window.webkitSpeechRecognition();
+        recognition.lang = "en-US";
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        recognition.start();
+
+        recognition.onresult = (event) => {
+            const voiceQuery = event.results[0][0].transcript;
+            setSearchQuery(voiceQuery);
+            handleSearch(voiceQuery);
+        };
+
+        recognition.onerror = (event) => {
+            console.error("Voice search error:", event.error);
+        };
+    };
+
     useEffect(() => {
         getProducts();
     }, []);
@@ -82,13 +108,21 @@ const GetProducts = () => {
             <b className="text-warning">{loading}</b>
             <b className="text-danger">{error}</b>
             <div className="justify-content-center m-3">
-                <div className="col-md-6">
+                <div className="col-md-6 d-flex">
                     <input
                         type="text"
                         placeholder="Search for product by name"
                         className={`form-control ${theme === "dark" ? "bg-secondary text-white" : "bg-light text-dark"}`}
+                        value={searchQuery}
                         onChange={(e) => handleSearch(e.target.value)}
                     />
+                    <button
+                        className="btn btn-primary ms-2"
+                        onClick={handleVoiceSearch}
+                        title="Click to search by voice"
+                    >
+                        🎤
+                    </button>
                 </div>
             </div>
             {filteredProducts.map((product) => (
