@@ -84,7 +84,7 @@ const SingleProduct = () => {
                         {[1, 2, 3, 4, 5].map((star) => (
                             <span
                                 key={star}
-                                className={`text-${rating >= star ? "success" : "warning"} fw-bold`}
+                                className={`text-${rating >= star ? "warning" : "success"} fw-bold`}
                                 style={{ cursor: "pointer", fontSize: "1.5rem" }}
                                 onClick={() => handleRating(star)}
                             >

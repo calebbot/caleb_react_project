@@ -34,14 +34,14 @@ const SignIn=()=>{
         }
     }
     return(
-       <div className="row justify-content-center mt-4 bg-success">
-        <div className="col-md-6 card shadow p-4 bg-success">
+       <div className="row justify-content-center mt-4 bg-secondary">
+        <div className="col-md-6 card shadow p-4 bg-secondary">
             <h2>Sign In</h2>
             <b className="text-danger">{error}</b>
             <b className="text-warning">{loading}</b>
             <form onSubmit={submitForm}> 
-                <input type="text"  placeholder="Enter Username" className="form-control bg-success text-white"  required onChange={(e)=>setUsername(e.target.value)}/><br />
-                <input type="text" className="form-control bg-success text-white" placeholder="Enter Password" required onChange={(e)=>setPassword(e.target.value)}/><br />
+                <input type="text"  placeholder="Enter Username" className="form-control bg-secondary text-white"  required onChange={(e)=>setUsername(e.target.value)}/><br />
+                <input type="text" className="form-control bg-secondary text-white" placeholder="Enter Password" required onChange={(e)=>setPassword(e.target.value)}/><br />
                 <button className="btn btn-primary" type="submit">Sign In</button>
             </form>
             <p>Don't have an Account? <Link to="/SignUp">Sign Up</Link> </p>

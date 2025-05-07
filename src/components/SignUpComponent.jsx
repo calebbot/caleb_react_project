@@ -37,21 +37,21 @@ const SignUp=()=>{
     }
 
     return(
-       <div className="row justify-content-center mt-4 bg-success">
-        <div className="col-md-6 card shadow p-4 bg-success">
+       <div className="row justify-content-center mt-4 bg-secondary">
+        <div className="col-md-6 card shadow p-4 bg-secondary">
             <h2>Sign Up</h2>
             <b className="text-danger">{error}</b>
              <b className="text-warning">{loading}</b>
              <b className="text-success">{success}</b>
             <form onSubmit={submitform}>
 
-            <input type="text" className="form-control text-white bg-success" placeholder="Enter Username" required onChange={(e)=>setUsername(e.target.value)}/>
+            <input type="text" className="form-control text-white bg-secondary" placeholder="Enter Username" required onChange={(e)=>setUsername(e.target.value)}/>
             <br />
-            <input type="email" required placeholder="Enter Email" className="form-control text-white bg-success" onChange={(e) =>setEmail(e.target.value)}/>
+            <input type="email" required placeholder="Enter Email" className="form-control text-white bg-secondary" onChange={(e) =>setEmail(e.target.value)}/>
             <br />
-            <input type="tel" required placeholder="Enter Phone No" className="form-control text-white bg-success" onChange={(e)=>setPhone(e.target.value)}/>
+            <input type="tel" required placeholder="Enter Phone No" className="form-control text-white bg-secondary" onChange={(e)=>setPhone(e.target.value)}/>
             <br />
-            <input type="password" required placeholder="Enter Password" className="form-control text-white bg-success" onChange={(e)=>setPassword(e.target.value)}/>
+            <input type="password" required placeholder="Enter Password" className="form-control text-white bg-secondary" onChange={(e)=>setPassword(e.target.value)}/>
             <br />
             <button className="btn btn-primary">Sign Up</button>
             </form>

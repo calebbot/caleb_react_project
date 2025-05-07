@@ -31,6 +31,7 @@ const Footer = () => {
                 {/* Contact Section */}
                 <div className="col-md-4">
                     <h4 className="text-center">CONTACT US</h4>
+                    <p className="text-center">Phone: 0748895883</p>
                     <form>
                         <textarea
                             className="form-control bg-secondary text-white"
@@ -51,6 +52,14 @@ const Footer = () => {
             {/* Footer Section */}
             <footer className="text-white bg-dark text-center p-2">
                 <h5>Developed by Caleb.M.Waweru &copy; 2025. All rights reserved.</h5>
+                <div className="d-flex justify-content-center mt-3">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+                        <img src="images/fb.png" alt="Facebook" width="30" height="30" />
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+                        <img src="images/in.png" alt="LinkedIn" width="30" height="30" />
+                    </a>
+                </div>
             </footer>
         </div>
     );

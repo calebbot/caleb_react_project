@@ -53,24 +53,24 @@ const AddProducts=()=>{
 
     }
     return(
-        <div className="row justify-content-center mt-4 bg-success">
+        <div className="row justify-content-center mt-4 bg-secondary">
         <nav className="m-4">
                 <Link className="btn btn-dark mx-2"  to={"/addproducts"}>Add Products</Link>
                 <Link className="btn btn-dark mx-2" to={"/SignIn"}>Sign In</Link>
                 <Link className="btn btn-dark mx-2" to={"SignUp"}>Sign Up</Link>
                 <Link className="btn btn-dark mx-2"  to={"/"}>Home</Link>
             </nav>
-            <div className="col-md-6 card shadow p-4 bg-success">
+            <div className="col-md-6 card shadow p-4 bg-secondary">
                 <h2>Add Product</h2>
                 <b className="text-warning">{loading}</b>
                 <b className="text-danger">{error}</b>
                 <b className="text-success">{success}</b>
                 <form onSubmit={submitForm}>
-                    <input type="text" className="form-control bg-success text-white" placeholder="Enter Product Name" required onChange={(e)=>setProductName(e.target.value)} value={product_name}/><br />
-                    <textarea name="" id="" className="form-control bg-success text-white" required  placeholder="Product description"  onChange={(e)=>setProductDesc(e.target.value)} value={product_desc}></textarea><br />
-                    <input type="number" placeholder="Product Cost"  className="form-control bg-success text-white" required onChange={(e)=>setProductCost(e.target.value)} value={product_cost}/><br />
-                    <label htmlFor="" className="form-label bg-success text-white" required >Car Photo</label><br />
-                    <input type="file" className="form-control bg-success text-white" onChange={(e)=>setProductPhoto(e.target.files[0])}/><br />
+                    <input type="text" className="form-control bg-secondary text-white" placeholder="Enter Product Name" required onChange={(e)=>setProductName(e.target.value)} value={product_name}/><br />
+                    <textarea name="" id="" className="form-control bg-secondary text-white" required  placeholder="Product description"  onChange={(e)=>setProductDesc(e.target.value)} value={product_desc}></textarea><br />
+                    <input type="number" placeholder="Product Cost"  className="form-control bg-secondary text-white" required onChange={(e)=>setProductCost(e.target.value)} value={product_cost}/><br />
+                    <label htmlFor="" className="form-label bg-secondary text-white" required >Car Photo</label><br />
+                    <input type="file" className="form-control bg-secondary text-white" onChange={(e)=>setProductPhoto(e.target.files[0])}/><br />
                     <button className="btn btn-primary">Add Product</button>
 
                     
