@@ -205,6 +205,23 @@ const GetProducts = () => {
                             <button className="btn btn-primary" onClick={() => navigate("/services/car-parts")}>
                                 Read More
                             </button>
+                            <p>
+                            At Caleb Motors, we provide a wide range of high-quality car parts to ensure your vehicle
+                            performs at its best. Whether you need replacement parts, upgrades, or accessories, we have
+                            you covered.
+                        </p>
+                        <ul>
+                            <li>Engine Components</li>
+                            <li>Brake Systems</li>
+                            <li>Suspension and Steering</li>
+                            <li>Electrical and Lighting</li>
+                            <li>Body Parts and Accessories</li>
+                        </ul>
+                        <p>
+                            Our car parts are sourced from trusted manufacturers and are compatible with various vehicle
+                            models. We guarantee durability, reliability, and performance.
+                        </p>
+
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -217,6 +234,21 @@ const GetProducts = () => {
                             <button className="btn btn-primary" onClick={() => navigate("/services/oil-change")}>
                                 Read More
                             </button>
+                            <h3>Keep Your Car Running Smoothly</h3>
+                        <p>
+                            Regular oil changes are essential for maintaining the health and performance of your vehicle's engine. 
+                            At Caleb Motors, we provide professional oil change services to ensure your car runs smoothly and efficiently.
+                        </p>
+                        <ul>
+                            <li>High-quality engine oil</li>
+                            <li>Oil filter replacement</li>
+                            <li>Inspection of engine components</li>
+                            <li>Quick and reliable service</li>
+                        </ul>
+                        <p>
+                            Our team of experts uses premium-grade oils and filters to protect your engine from wear and tear, 
+                            improve fuel efficiency, and extend the lifespan of your vehicle. Trust us to keep your car in top condition.
+                        </p>
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -229,6 +261,22 @@ const GetProducts = () => {
                             <button className="btn btn-primary" onClick={() => navigate("/services/general-service")}>
                                 Read More
                             </button>
+                            <h3>Comprehensive Car Servicing</h3>
+                        <p>
+                            At Caleb Motors, we offer comprehensive general servicing to ensure your vehicle remains in top condition. 
+                            Regular servicing is essential for maintaining the safety, reliability, and performance of your car.
+                        </p>
+                        <ul>
+                            <li>Engine Diagnostics and Tune-ups</li>
+                            <li>Brake Inspection and Repairs</li>
+                            <li>Suspension and Steering Maintenance</li>
+                            <li>Battery Testing and Replacement</li>
+                            <li>Fluid Checks and Top-ups</li>
+                        </ul>
+                        <p>
+                            Our team of experienced technicians uses advanced tools and techniques to provide thorough inspections 
+                            and repairs. Trust us to keep your car running smoothly and efficiently.
+                        </p>
                         </div>
                     </div>
                 </div>
