@@ -246,8 +246,7 @@ const GetProducts = () => {
                             <li>Quick and reliable service</li>
                         </ul>
                         <p>
-                            Our team of experts uses premium-grade oils and filters to protect your engine from wear and tear, 
-                            improve fuel efficiency, and extend the lifespan of your vehicle. Trust us to keep your car in top condition.
+                            Our team of experts uses premium-grade oils and filters.
                         </p>
                         </div>
                     </div>
@@ -274,8 +273,7 @@ const GetProducts = () => {
                             <li>Fluid Checks and Top-ups</li>
                         </ul>
                         <p>
-                            Our team of experienced technicians uses advanced tools and techniques to provide thorough inspections 
-                            and repairs. Trust us to keep your car running smoothly and efficiently.
+                            A team of experienced technicians.
                         </p>
                         </div>
                     </div>
