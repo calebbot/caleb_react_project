@@ -219,7 +219,7 @@ const GetProducts = () => {
                         </ul>
                         <p>
                             Our car parts are sourced from trusted manufacturers and are compatible with various vehicle
-                            models. We guarantee durability, reliability, and performance.
+                            models.
                         </p>
 
                         </div>
